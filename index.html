@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raya Kitchen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> 𝓡𝞪𝓨𝞪's KITCHEN</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#order">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Authentic Biryani, Delivered to Your Door</h2>
+    <p>Hyderabadi | Veg | Chicken | Mutton | Dum Biryani</p>
+    <a href="#menu" class="btn">Explore Menu</a>
+  </section>
+  <section id="menu" class="menu">
+    <h2>Our Biryani Specials</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/images1.jpg" />
+        <h3>Chicken Biryani</h3>
+        <span>₹220</span>
+        <button type="button" onclick="fillBiryani('Chicken Biryani')">Order</button>
+      </div>
+      <div class="card">
+        <img src="images/images3.jpg" />
+        <h3>Mutton Biryani</h3>
+        <span>₹280</span>
+        <button type="button" onclick="fillBiryani('Mutton Biryani')">Order</button>
+      </div>
+      <div class="card">
+        <img src="images/image4.jpg" />
+        <h3>Veg Biryani</h3>
+        <span>₹180</span>
+        <button type="button" onclick="fillBiryani('Veg Biryani')">Order</button>
+      </div>
+    </div>
+  </section>
+  
+  
+     
+
+  <section id="about" class="about">
+    <h2>About RAYA'S Kitchen</h2>
+    <p>
+      Raya's Kitchen brings the love of home-cooked biryani to your doorstep. Made
+      with fresh ingredients and traditional recipes, our biryanis are perfect
+      for any occasion.
+    </p>
+  </section>
+
+  <section id="order" class="order">
+    <h2>Order Now</h2>
+    <form id="orderForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" id="biryaniType" name="biryaniType" placeholder="Biryani Type" required />
+      <input type="text" name="address" placeholder="Delivery Address" required />
+      <button type="submit">Place Order</button>
+    </form>
+    <p id="orderStatus"></p>
+  </section>
+  
+
+  <footer>
+    <p>© 2025 RAYA's Kitchen | Made with ❤️ in India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
